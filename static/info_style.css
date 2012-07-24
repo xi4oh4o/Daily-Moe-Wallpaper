@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* Global Style 
+---------------*/
+* { margin:0;padding:0;}
+
+body {
+    font: normal 100% Arial, Helvetica, sans-serif;
+    background: url(http://subtlepatterns.com/patterns/crisp_paper_ruffles.png) repeat fixed whiteSmoke;
+        }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Web Font-face */
+@font-face {
+    font-family: 'IcoMoon';
+    src: url('fonts/IcoMoon.eot');
+    src: url('fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/IcoMoon.svg#IcoMoon') format('svg'),
+        url('fonts/IcoMoon.woff') format('woff'),
+        url('fonts/IcoMoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+        }
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon_"]:before, [class*=" icon_"]:before {
+    font-family: 'IcoMoon';
+    font-style: normal;
+        }
+
+#container {
+    /*text-align: center;*/
+        }
+
+#header {
+    background: url(texture.png) repeat fixed 0 0 #C1372A;
+    padding: 4px 0px;
+    box-shadow: 1px 1px 16px -8px #000000 inset;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+        }
+
+#header div {
+    font: italic 2em 'Berkshire Swash', cursive,Georgia,Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 0px -1px #000;
+    text-align:center;
+        }
+
+#wrapper {
+    margin: 1em;
+}
+
+#wrapper li{
+    list-style-type: none;
+    font: italic 1em Georgia,Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 1px #fff;
+    margin: 6px 0
+        }
+
+#wrapper li.big_font {
+    font-size: 2em;
+    padding-bottom: 6px;
+    border-bottom: dotted;
+    width: 4em;
+}
+
+#wrapper li a {
+    color: #000;
+}
+
+#go_home a{
+    font: italic 3em Georgia,Arial, Helvetica, sans-serif;
+    text-shadow: -1px 2px 1px #888;
+    color: #000;
+}
+
+#msg_content {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 6px 2px #ccc;
+}
+
+#send_button {
+    font: 2em Verdana, Geneva, Arial, Helvetica, sans-serif;
+    border: 1px solid;
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* 404 */
+
+#not_found {
+    text-align: center;
+    margin: 3em;
+    text-shadow: 0px 1px 1px #888;
+    font: normal Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#not_found p {
+    padding-bottom: 3em;
+}
+
+#not_found a {
+    color: #000;
+}
+
+#not_found a:hover,a:active {
+    text-shadow: 0px -2px 1px #888;
+}

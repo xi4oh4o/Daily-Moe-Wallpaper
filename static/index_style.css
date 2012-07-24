@@ -1,0 +1,336 @@
+@charset "utf-8";
+/* Global Style 
+---------------*/
+* { margin:0;padding:0;}
+
+body {
+    font: normal 100% Arial, Helvetica, sans-serif;
+    background: url(http://dailymoe-imoe.stor.sinaapp.com/images/origin.jpg) no-repeat center top fixed whiteSmoke;
+    background-size: cover;
+        }
+
+img {
+    max-width: 100%;
+    width: 100%;
+    -ms-interpolation-mode: bicubic;
+        }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Web Font-face */
+@font-face {
+    font-family: 'IcoMoon';
+    src: url('fonts/IcoMoon.eot');
+    src: url('fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+        url('fonts/IcoMoon.svg#IcoMoon') format('svg'),
+        url('fonts/IcoMoon.woff') format('woff'),
+        url('fonts/IcoMoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+        }
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon_"]:before, [class*=" icon_"]:before {
+    font-family: 'IcoMoon';
+    font-style: normal;
+        }
+
+#container {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+        }
+
+/* Header Style 
+---------------*/
+#header {
+    background: url(texture.png) repeat fixed 0 0 #C1372A;
+    padding: 4px 0px;
+    box-shadow: 1px 1px 16px -8px #000000 inset;
+        }
+
+#header div {
+    font: italic 2em 'Berkshire Swash', cursive,Georgia,Arial, Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 0px -1px #000;
+    text-align:center;
+        }
+
+
+/* header icon fonts */
+.icon_info:before {
+    content: "\2611";
+    text-shadow: 0px -1px #000;
+    color: #fff;
+    font-size: 1em;
+        }
+
+.icon_download:before {
+    text-shadow: 0px -1px #000;
+    content: "\2913";
+    font-size: 1em;
+    color: #fff;
+        }
+
+.icon_left {
+    float: left;
+    padding: 0px 7px;
+    border-right: 1px solid #932A2A;
+        }
+
+.icon_right {
+    float: right;
+    padding: 0px 7px;
+    border-left: 1px solid #932A2A;
+    cursor: pointer;
+        }
+
+.icon_left:active,.icon_right:active{
+    box-shadow: 0px 0px 6px 0px #000 inset;
+    border-radius: 6px;
+        }
+
+/* Download Show 
+----------------*/
+#down_window {
+    display: none;
+    margin-top: 25px;
+    margin-right: 25px;
+    float: right;
+    clear: both;
+    background-color: rgba(0, 0, 0, .25);
+    height: 9em;
+    width: 10em;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+    border: 1px solid gray;
+        }
+
+/* download icon fonts */
+.icon_box_add:before {
+    content: "\2b07";
+    color: #fff;
+    font-size: 2em;
+        }
+
+#down_list li{
+    list-style-type: none;
+    color: whiteSmoke;
+        }
+
+#down_list a{
+    text-decoration: none;
+    font: italic 1.3em Georgia,Arial, Helvetica, sans-serif;
+    color: whiteSmoke;
+    text-shadow: 0px -1px 0px #000;
+    -moz-transition: text-shadow 0.3s linear 0s;
+        -webkit-transition: text-shadow 0.3s linear 0s;
+        -o-transition: text-shadow 0.3s linear 0s;
+        }
+
+#down_list a:hover, #Links a:hover {
+        text-shadow: 0px 2px 0px #000;
+        }
+
+/* Images Info 
+--------------*/
+.info_show {
+    background-color: rgba(0, 0, 0, .25);
+    padding: 3px 6px;
+    border-radius: 9px;
+    text-shadow: 0px -1px 0px #000;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .25) inset;
+    color: #fff;
+        }
+
+#image_info {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+        }
+
+#hitokoto {
+    position: fixed;
+    bottom: 10px;
+    border-radius: 0px 9px 9px 0px;
+        }
+
+.tips {
+    font-size: 9px;
+        }
+
+#down_window hr {
+    border-top: 1px solid #000;
+    color: #888;
+    margin: 5px;
+        }
+
+#share_button {
+    position: absolute;
+    right: 0px;
+    width: 18px;
+    top: 10em;
+    background-color: rgba(0, 0, 0, .25);
+    padding: 2px;
+    border-radius: 6px 0px 0px 6px;
+}
+/* Desktop Scaling dimensions 
+-----------------------------*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 2048px) {
+    body {
+        background: url(http://dailymoe-imoe.stor.sinaapp.com/images/origin.jpg) no-repeat center top fixed whiteSmoke;
+        background-size: cover;
+    }
+}
+
+/* Tablet Scaling dimensions 
+----------------------------*/
+
+/* iPad 2&3rd generation */
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background: url(http://dailymoe-imoe.stor.sinaapp.com/images/1536x2048.jpg) no-repeat center top fixed whiteSmoke;
+        background-size: cover;
+        }
+}
+
+/* Normal Tablet Scaling dimensions */
+@media only screen and (device-width: 768px) and (deice-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        background: url(http://dailymoe-imoe.stor.sinaapp.com/images/1536x2048.jpg) no-repeat center top fixed whiteSmoke;
+        background-size: 768x1024;
+    }
+}
+
+/* Mobile Scaling dimensions */
+
+/* Retina below */
+@media all and (min-device-width: 240px) and (max-device-width: 768px) {
+#header div{
+    font-size: 1.5em;
+}
+
+#hitokoto {
+    border-radius: 0;
+    bottom: 10px;
+    display: inline;
+    left: 0;
+    right: 0;
+}
+
+#image_info {
+    position: fixed;
+    bottom: 60px;
+    font-size: .85em;
+    border-radius: 9px 0 0 9px;
+    right: -1px;
+}
+
+#image_info hr{
+    display: none;
+}
+
+.tips {
+    display: none;
+}
+
+#down_tips {
+    font-size: .8em;
+    text-shadow: 0px 1px 0px #000;
+    margin-top: 10px;
+}
+
+#down_window {
+    width: auto;
+    height: auto;
+        }
+
+#share_button {
+        display: none;
+        }
+
+    }
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 720px) and (orientation:landscape) {
+
+    body {
+            background: url(http://subtlepatterns.com/patterns/crisp_paper_ruffles.png) no-repeat center top fixed whiteSmoke;
+        }
+
+    #header {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+
+    #landscape:before{
+        content: "我暂时还不支持横屏访问哦";
+    }
+
+    #landscape {
+        text-align: center;
+        margin: auto;
+        padding: 3px;
+        font-size: 2em;
+    }
+}
+
+/* iPhone 4rd Generation */
+@media only screen and (device-width: 320px) and (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+            background: url(http://dailymoe-imoe.stor.sinaapp.com/images/640x960.jpg) no-repeat center top fixed whiteSmoke;
+            background-size: 320px 480px;
+        }
+        .origin {
+            display: none;
+        }
+    }
+
+/* HTC Big & Meizu */
+@media screen and (device-width: 720px) and (device-height: 1280px) {
+        body {
+            background: url(http://dailymoe-imoe.stor.sinaapp.com/images/720x1280.jpg) no-repeat center top fixed whiteSmoke;
+            background-size: cover;
+        }
+    }
+
+@media screen and (device-width: 540px) and (device-height: 960px) {
+        body {
+            background: url(http://dailymoe-imoe.stor.sinaapp.com/images/540x960.jpg) no-repeat center top fixed whiteSmoke;
+            background-size: cover;
+        }
+    }
+/* Android */
+@media screen and (max-device-width: 480px) {
+        body {
+            background: url(http://dailymoe-imoe.stor.sinaapp.com/images/480x854.jpg) no-repeat center top fixed whiteSmoke;
+            background-size: cover;
+        }
+    }
+
+@media only screen and (device-width: 480px) and (device-height: 800px) {
+        body {
+            background: url(http://dailymoe-imoe.stor.sinaapp.com/images/480x800.jpg) no-repeat center top fixed whiteSmoke;
+            background-size: cover;
+        }
+    }
+ 
+@media screen and (device-width: 320px) and (device-height: 480px) {
+        body {
+            background: url(http://dailymoe-imoe.stor.sinaapp.com/images/320x480.jpg) no-repeat center top fixed whiteSmoke;
+            background-size: cover;
+        }
+    }
+
+@media screen and (device-width: 240px) and (device-height: 320px) {
+        body {
+            background: url(http://dailymoe-imoe.stor.sinaapp.com/images/240x320.jpg) no-repeat center top fixed whiteSmoke;
+            background-size: cover;
+        }
+    }
