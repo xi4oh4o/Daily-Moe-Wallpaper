@@ -50,7 +50,7 @@ function setInfo($author, $workname, $hitokoto, $source,  $id) {
 }
 
 /** Upload Account information verification **/
-define("PASSWORD", '912913'); //typing your password
+define("PASSWORD", '******'); //typing your password
 if(!empty($_POST['password'])) {
     if($_POST['password'] == PASSWORD) {
         setcookie("password",$_POST['password'],time()+36000,"/");
