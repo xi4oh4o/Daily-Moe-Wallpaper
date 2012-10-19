@@ -34,6 +34,10 @@
         </div>
 
         <div id="wrapper">
+            <li class="big_font">特別感謝</li>
+            <li>現每日萌圖精選由“<a href="http://bgm.tv/user/zergy">清烈羽(zergy)”</a></li>
+            <li>為您更新精選！</li>
+            <br />
             <li class="big_font">你好</li>
             <li>我是</li>
             <li>開發和設計</li>

@@ -1,0 +1,16 @@
+/* TEAM */
+	Chef:Howe Isamu
+	Contact: xi4oh4o [at] gmail.com
+	Twitter: @XHs
+	From:ZhengZhou, HeNan, China
+
+/* THANKS */
+	Lovingly made by: Haruka Xu
+	Twitter: @Haruka_Xu
+	From: ZhengZhou, HeNan, China
+
+/* SITE */
+	Last update:2012/07/1
+	Language:English / Chinese
+	Doctype:HTML5
+	IDE: Sublime Text 2

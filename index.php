@@ -115,6 +115,17 @@ if ($_GET['down'] == '2048x1536') {
         echo $stor->read("imoe","images/$filename");
     }
 
+    /*
+      PSV exclusive
+        960x544
+    ------------------
+    */
+if ($_GET['down'] == '960x544') {
+        echo $stor->read("imoe","images/$filename");
+    }else if($_GET['down'] == '960x544'){
+        $img = new SaeImage ( $stor->read("imoe","images/960x544.jpg") );
+    }
+
 echo $img->exec(); //generator resize the image download
 $img->clean();
 $stor->close();
